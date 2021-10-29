@@ -1,0 +1,394 @@
+* {
+  margin: 0px;
+  font-family: 'Comic Neue', cursive;
+}
+.nav-responsive-ul {
+  display: none;
+}
+
+.nav {
+  background-color: red;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height:75px;
+}
+
+.boton {
+  display: inline-block;
+  font-size: 5px;
+  padding:15px;
+}
+.boton a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  
+}
+.fas,
+.fa-solid {
+  color: whitesmoke;
+  height: 5px;
+  margin:   10px;
+}
+
+.boton i {
+  align-items: right;
+  width: 15px;
+  
+}
+.nav-responsive-button-container {
+  width: 100%;
+}
+.nav-responsive-button {
+  padding: 40px;
+  background-color: red;
+}
+.nav-li-container {
+  position: relative;
+  top: -1000px;
+  width: 100vh;
+  height: 100vh;
+  background-color: darkred;
+}
+/* MAIN */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+main  div {
+  
+  height: 16vh;
+  background-color: darkred;
+  transition: 1s;
+  font-size: 75px;
+  color: rgb(255, 255, 255);
+}
+div a {
+  color: whitesmoke;
+
+}
+
+.calzados-locuras {
+  grid-column: 1/4;
+  justify-content: center;
+  text-align: center;
+  font-size: 100px;
+}
+.calzados-locuras:hover {
+  background-color: black;
+  transition: 1.5s;
+}
+
+.dama {
+  grid-column: 1/4;
+  text-align: right;
+
+}
+.dama:hover {
+  grid-column: 1/4;
+  background-color: #F50C63;
+  transition: 1.5s;
+  text-align: center;
+}
+
+.hombre {
+  width: 100vh;
+  grid-column: 1/4;
+  width: 100%;
+  text-align: left;
+
+
+}
+.hombre:hover {
+  grid-column: 1/4;
+  background-color: #15518F;
+  transition: 1.5s;
+  text-align: center;
+}
+
+.niño {
+  grid-column: 1/4;
+  text-align: right;
+
+
+}
+.niño:hover {
+  grid-column: 1/4;
+  background-color: #43f083;
+  transition: 1.5s;
+  text-align: center;
+}
+
+.verano {
+  grid-column: 1/4;
+  text-align: left;
+}
+.verano:hover {
+  text-align: center;
+  background-color: #DBC142;
+  text-align: center;
+  transition: 1.5s;
+}
+
+.nosotros {
+  grid-column: 1/4;
+  text-align: right;
+}
+.nosotros:hover {
+  margin-top: 0;
+  background-color: #C26613;
+  grid-column: 1/4;
+  transition: 1.5s;
+  text-align: center;
+  outline: none;
+}
+
+a {
+  display: inline;
+  text-decoration: none;
+  font-style: none;
+  color: black;
+  margin-top: 50%;
+  height: 100%;
+  width: 100%;
+}
+a:hover {
+  color: black;
+  text-align: center;
+}
+@keyframes float{
+  0%, 100%{
+      transform: translateX(0rem);
+  }
+  50%{
+      transform: translateX(-3.5rem);
+  }
+}
+img {
+  height: inherit;
+  width: inherit;
+  margin-left: 46.5%;  
+}
+img:hover {
+  height: inherit;
+  width: inherit;
+  margin-left: 46.5%;  
+  animation: float 5s linear .1S;
+}
+.img-container:hover {
+  grid-column: 1/4;
+  background-color: red;
+  
+}
+.img-container {
+  grid-column: 1/4;
+  display: flex;
+  align-items: center;
+} 
+ .calzados-locuras {
+    height: 180px;
+  }
+} 
+
+/* footer */
+footer div {
+  height: 40px;
+  background-color: darkred;
+  transition: 1s;
+  font-size: 100px;
+}
+
+/* PRIMER PUNTO DE CORTE = MOBILE */
+@media only screen and (max-width: 720px) {
+  .nav-ul {
+    display: none;
+  }
+  .nav {
+    height: 40px;
+    width: 100vh;
+    background-color: red;
+  }
+  .nav-responsive-ul {
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    width: 100px;
+    background-color: darkred;
+    height: 100vh;
+    list-style: none;
+    padding: 0;
+    height: 0px;
+  }
+
+  .boton-responsive-li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+    width: 30px;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+
+  .fas {
+    color:white;
+  }
+
+  .nav-responsive-ul:hover > .nav-li-container {
+    top: 0px;
+  }
+  .grid-container  {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+
+  }
+  main {
+    margin-top: 40px;
+  }
+  footer div {
+    height: 15vh;
+    background-color: darkred;
+    font-size: 75px;
+  }
+}
+
+/* SEGUNDO PUNTO DE CORTE*/
+@media only screen and (min-width: 720px) 
+  {
+  .nav-responsive-ul {
+    display: none;
+  }
+  
+  .nav {
+    display: flex;
+    flex: wrap;
+    background-color: red;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50x;
+  }
+  
+  .boton {
+    display: inline-block;
+    font-size: 15px;
+    padding: 10px;
+  }
+  .boton a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .fas,
+  .fa-solid {
+    color: whitesmoke;
+    height: 20px;
+    margin:   10px;
+  }
+  
+  .boton i {
+    align-items: right;
+    width: 15px;
+    box-sizing: border-box;
+  }
+  .nav-responsive-button-container {
+    width: 100%;
+  }
+  .nav-responsive-button {
+    padding: 40px;
+    background-color: red;
+  }
+  .nav-li-container {
+    position: relative;
+    top: -1000px;
+    width: 100vh;
+    height: 100vh;
+    background-color: darkred;
+  }
+  main {
+    margin-top: 75px;
+    
+}
+  main div {
+    font-size: 60px;
+    height: 15vh;
+    
+  }
+ 
+  footer div {
+    height: 15vh;
+    background-color: darkred;
+    font-size: 60px;
+  }
+
+.img-container {
+    height: 200px;
+  }
+  .calzados-locuras {
+    height: 260px;
+  }
+
+  img {
+    margin: auto;
+    
+  }
+}
+
+/* TERCER PUNTO DE CORTE*/
+ @media only screen and (min-width:1115px){
+  .nav-responsive-ul {
+    display: none;
+  }
+  
+  .nav {
+    background-color: red;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 75px;
+  }
+  
+  .boton {
+    display: inline-block;
+    font-size: 25px;
+    padding:15px;
+  }
+  .boton a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 15px;
+    
+  }
+  .fas,
+  .fa-solid {
+    color: whitesmoke;
+    height: 20px;
+    margin:   10px;
+  }
+  
+  .boton i {
+    align-items: right;
+    width: 15px;
+    
+  }
+  .nav-responsive-button-container {
+    width: 100%;
+  }
+  .nav-responsive-button {
+    padding: 40px;
+    background-color: red;
+  }
+  .nav-li-container {
+    position: relative;
+    top: -1000px;
+    width: 100vh;
+    height: 100vh;
+    background-color: darkred;
+  }
+ 

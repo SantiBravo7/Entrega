@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/e4f3697e41.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/nosotros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./mercadolibre/locuras.icon" type="image/x-icon">
+    <title>Nosotros</title>
+</head>
+<header>
+    <nav class="nav">
+        <ul class="nav-ul">
+            <li class="boton"><i class="fas fa-user"></i><a href="index.html">Inicio</a></li>
+            <li class="boton"><i class="fas fa-female"></i><a href="dama.html">Dama</a></li>
+            <li class="boton"><i class="fas fa-male"></i><a href="hombre.html">Hombre</a></li>
+            <li class="boton"><i class="fas fa-baby"></i><a href="chicos.html">niños</a></li>
+            <li class="boton"><i class="fas fa-umbrella-beach"></i><a href="verano.html">Verano</a></li>
+            <li class="boton"><i class="fas fa-user"></i><a href="nosotros.html">Nosotros</a></li>
+        </ul>
+        <ul class="nav-responsive-ul">
+             <div class="nav-responsive-button-container"><div class="nav-responsive-buttom fas fa-bars"></div></div>
+             <div class="nav-li-container">
+             <li class="boton-responsive-li"><i class="fas fa-user"></i><a href="index.html">Inicio</a></li>
+             <li class="boton-responsive-li"><i class="fas fa-female"></i><a href="dama.html">Dama</a></li>
+             <li class="boton-responsive-li"><i class="fas fa-male"></i><a href="hombre.html">Hombre</a></li>
+             <li class="boton-responsive-li"><i class="fas fa-baby"></i><a href="chicos.html">Niño</a></li>
+             <li class="boton-responsive-li"><i class="fas fa-umbrella-beach"></i><a href="verano.html">Verano</a></li>
+                <li class="boton-responsive-li"><i class="fas fa-user"></i><a href="nosotros.html">Nosotros</a></li>
+            </div>
+        </ul>
+    </nav> 
+    <main>
+        <h1 class="titulo">Mantenete en contacto con nosotros</h1>
+        <p class="titulo sub">Si queres recibir todas las novedades que tenemos para vos, por favor completa el siguente formulario.</p>
+        <form class="formulario" id="formulario">
+            <!-- Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Escriba su nombre aquí...">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error"><b>El nombre debe tener mínimo de 4 caracteres y maximo de 16, solo letras y guiones bajos.</b> </p>
+            </div>
+            <!-- Usuario -->
+            <div class="formulario__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Usurio</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="Escriba su usuario aqui...">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error"><b>El nombre de ususario debe ser mínimo de 4 caracteres y maximo de 16, solo letras y guiones bajos</b>.</p>
+            </div>   
+        
+        <!-- Contraseña -->
+        <div class="formulario__grupo" id="grupo__password">
+            <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password" placeholder="Escriba su contraseña aquí...">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error"><b>La contraseñas o debe ser de 4 a 12 digitos.</b></p>
+        </div>
+
+        <!-- Correo -->
+        <div class="formulario__grupo" id="grupo__correo">
+            <label for="correo" class="formulario__label">Correo electronico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo" placeholder="Escriba su mail aquí...">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error"><b>Debe ser un email válido.</b></p>
+        </div>
+        <div class="formulario__mensaje" id="grupo__mensaje">
+            <p><i class=" fas fa-exclamation-triangle"></i><b>Error:</b> Por favor rellene el formulario correctamente.</p>
+        </div>
+        <div class="formulario__grupo formulario__grupo-btn-enviar">
+            <button type="submit" class="formulario_btn">Enviar</button>
+            <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario ha sido enviado con éxito.</p>
+        </div>
+    </form>
+    </main>
+    <script src="./js/formulario.js"></script>
+</header>
+</html>
+

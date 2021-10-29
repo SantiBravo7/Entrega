@@ -1,0 +1,252 @@
+  * {
+    margin: 0px;
+    font-family: 'Comic Neue', cursive;
+  }
+  body {
+    background-color: darkred;
+    color: aliceblue;
+  }
+  .nav-responsive-ul {
+    display: none;
+  }
+
+  .nav {
+    background-color: red;
+    width: 100%;
+  }
+
+  .boton {
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .boton a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .fas,
+  .fa-solid {
+    color: whitesmoke;
+    height: 20px;
+    margin: 7px;
+  }
+
+  .boton i {
+    align-items: right;
+    width: 15px;
+    box-sizing: border-box;
+  }
+  .nav-responsive-button-container {
+    width: 100%;
+  }
+  .nav-responsive-button {
+    padding: 40px;
+    background-color: red;
+  }
+  .nav-li-container {
+    position: relative;
+    top: -1000px;
+    width: 100vh;
+    height: 100vh;
+    background-color: darkred;
+  }
+  /* PUNTO DE CORTE = MOBILE*/
+  @media only screen and (max-width: 720px) {
+    .nav-ul {
+      display: none;
+    }
+    .nav {
+      height: 40px;
+      width: 100vh;
+      background-color: red;
+    }
+    .nav-responsive-ul {
+      position: absolute;
+      display: block;
+      font-size: 15px;
+      width: 100px;
+      background-color: darkred;
+      height: 100vh;
+      list-style: none;
+      padding: 0;
+      height: 0px;
+    }
+  
+    .boton-responsive-li i {
+      box-sizing: border-box;
+      text-align: right;
+      margin-right: 5px;
+      width: 30px;
+      text-decoration: none;
+      padding: 10px;
+    }
+    
+  
+    .fas {
+      color:white;
+    }
+  
+    .nav-responsive-ul:hover > .nav-li-container {
+      top: 0px;
+    }
+  }
+  }
+  .titulo  {
+    margin: 0px;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+  }
+  .sub {
+    background-color: rgb(149, 0, 0);
+  }
+  h1 {
+    background-color: rgb(216, 4, 4);
+    margin: 0;
+  }
+
+  .formulario {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap:  20px 75px;
+    margin: 10px;
+    outline: blue 3px;
+    margin-right: 70px;
+  } 
+
+  .formulario__label {
+    display: block;
+    font-weight: 700;
+    cursor: pointer;
+    width: 150px;
+  }
+  .formulario__grupo-input {
+    position: relative;
+  }
+  .formulario__input {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid transparent;
+    height: 30px;
+    line-height: 30px;
+    padding: 0px 40px 0 10px;
+    transition: .3s ease all;
+  }
+
+  .formulario__input:focus {
+    border: 3px solid rgb(255, 29, 29);
+    outline: none;
+    box-shadow: 3px 0 15px rgb(233, 31, 31);
+  }
+
+  .formulario__input-error {
+    font-size: 15px;
+    margin-bottom: 0;
+    display: none;
+  }
+
+  .formulario__input-error-activo {
+    display: block;
+  }
+
+  .formulario__validacion-estado {
+    position: absolute;
+    right: -60px;
+    bottom: 0px;
+    color: red;
+    z-index: 100;
+    opacity: 0;
+  }
+
+  .formulario__mensaje,
+  .formulario__grupo-btn-enviar {
+    grid-column: span 4;  
+  }
+
+  .formulario__mensaje { 
+      height: 100%;
+      line-height: 45px;
+      background-color: #ff0000;
+      padding: 0 15px;
+      border-radius: 3px;
+      display: none;
+  }
+
+  .formulario__mensaje p {
+    margin:0px;
+    
+  }
+
+  .formulario__grupo-btn-enviar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .formulario_btn {
+    height: 50px;
+    line-height: 50px;
+    width: 15%;
+    background-color: rgb(255, 29, 29);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    transition: .3 ease all;
+  }
+
+  .formulario_btn:hover {
+    box-shadow: 3px 0px 10px rgb(255, 29, 29, 1);
+  }
+
+  .formulario__mensaje-exito {
+    font-size: 15px;
+    display: none;
+  }
+  .formulario__mensaje-exito-activo {
+    display: block;
+  }
+  .formulario__mensaje {
+    display: none;
+  }
+
+  .formulario__mensaje-activo {
+    display: block;
+  }
+  .formulario__grupo-correcto .formulario__validacion-estado {
+    color: rgb(3, 197, 61);
+    opacity: 1;
+    
+  }
+  .formulario__grupo-correcto .formulario__label {
+    color: rgb(3, 197, 61); 
+  }
+  .formulario__grupo-incorrecto .formulario__label {
+    color: rgb(241, 2, 2); 
+  }
+  .formulario__grupo-correcto .formulario__input {
+    border: 3px solid white;
+  }
+
+  .formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: red;
+    opacity: 1;
+  }
+  .formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid red;
+  }
+
+  @media screen and (max-width: 765px) {
+    .formulario {
+      grid-template-columns: 1fr;
+    }
+    .formulario__mensaje,
+  .formulario__grupo-btn-enviar {
+    grid-column: 1;  
+  }
+  .formulario_btn {
+    width: 100%;
+    margin-left: 50px;
+  }
+  }

@@ -1,0 +1,167 @@
+/*header*/
+* {
+  margin: 0px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 25PX;
+}
+body{
+  background-color:darkred;
+}
+.nav-responsive-ul {
+  display: none;
+}
+
+.nav {
+  background-color: red;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height:75px;
+}
+
+.boton {
+  display: inline-block;
+  font-size: 5px;
+  padding:15px;
+}
+.boton a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 15px;
+  
+}
+.fas,
+.fa-solid {
+  color: whitesmoke;
+  height: 5px;
+  margin:   10px;
+}
+
+.boton i {
+  align-items: right;
+  width: 15px;
+  
+}
+.nav-responsive-button-container {
+  width: 100%;
+}
+.nav-responsive-button {
+  padding: 40px;
+  background-color: red;
+}
+.nav-li-container {
+  position: relative;
+  top: -1000px;
+  width: 100vh;
+  height: 100vh;
+  background-color: darkred;
+}
+
+
+
+/* main*/
+main {
+  margin-top: 60px;
+}
+.tittle {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin-top: 60px;
+  }
+.grid-container  {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+img {
+  max-height: 400px;
+  max-width: 400px;
+  padding: 5PX;
+}
+ .pic1 {
+  text-align: center;
+   outline: white solid 3px;
+   background-color: rgb(199, 199, 197);
+   box-shadow: red 15px 15px 10px;
+ }
+ .pic1:hover {
+    text-align: center;
+    outline: white solid 3px;
+    background-color: rgb(184, 184, 184);
+
+}
+h1 {
+  font-size: 75px;
+  padding: 30px;
+}
+h2 {
+  padding: 15px;
+  font-size: 35px;
+}
+ 
+p {
+  font-size: 40px;
+  background-color: rgb(163, 163, 163);
+}
+
+
+/* PUNTO DE CORTE = MOBILE*/
+@media only screen and (max-width: 720px) {
+  .nav-ul {
+    display: none;
+  }
+  .nav {
+    height: 40px;
+    width: 100vh;
+    background-color: red;
+  }
+  .nav-responsive-ul {
+    position: absolute;
+    display: block;
+    font-size: 25px;
+    width: 100px;
+    background-color: darkred;
+    height: 100vh;
+    list-style: none;
+    padding: 0;
+    height: 0px;
+  }
+
+  .boton-responsive-li i {
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 5px;
+    width: 30px;
+    text-decoration: none;
+  }
+  
+  a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+  }
+  .fas {
+    color:white;
+  }
+
+  .nav-responsive-ul:hover > .nav-li-container {
+    top: 0px;
+  }
+  .grid-container  {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    /* margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: 10px; */
+  }
+  div {
+    width: 100vh;
+  }
+
+}
